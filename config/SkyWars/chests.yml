@@ -1,23 +1,23 @@
-# Game chast config
-# Percentage chance a given slot is filled with an item
+# Game chest config
+# Percentage chance a given slot is filled with an item.
 slot-chance: 25
 
-# Percentage chance a higher tiered item is chosen
+# Percentage chance a higher tiered item is chosen.
 lvlup-chance: 30
 
-# The following allows you to change the default chest loot for the current game
+# The following allows you to change the default chest loot for the current game.
 # --------------------------------------------------------------------------
 # The following format MUST be followed... or else the server WILL NOT start
 #
-# You may as many lvlup tags as you want below the items tag
+# You may add as many lvlup tags as you want below the items tag.
 #
 # - ITEM_NAME;min_amount;max_amount;extra_data;enchantmen_ID;enchantment_lvl
-# ITEM_NAME = The Bukkit valid name of the item.  Find a list here: http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html
-# min_amount = The minimum number of this that can be chosen for a slot, should never be 0 or a negitive.
-# max_amount = The maxium number of this that can be chosen for a slot, should never be 0 or a negitive.
-# extra_data = [!NOT OPTIONAL!] Usually 0 in most cases, but for potions, use the potion DV, found here http://minecraft.gamepedia.com/Potion.  Also used for durabality, wool color, dye color, gold apple type, etc...
-# enchantmen_ID = [OPTIONAL] The ID of the enchantment to be applied to the item.  The list of enchantment IDs can be found here: http://minecraft.gamepedia.com/Enchanting.  Do not attempt to add enchantments to potions -_-
-# enchantment_lvl = [OPTIONAL] The level of the enchantment to be applied.  If left null and an enchantment is applied, level will default to one.
+# ITEM_NAME = The Bukkit valid name of the item.  Find a list here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+# min_amount = The minimum number of this that can be chosen for a slot, should never be 0 or a negative.
+# max_amount = The maxium number of this that can be chosen for a slot, should never be 0 or a negative.
+# extra_data = [!NOT OPTIONAL!] Usually 0 in most cases, but for potions, use the potion DV, found here http://minecraft.gamepedia.com/Potion#Data_values.  Also used for durabality, wool color, dye color, gold apple type, etc...
+# enchantmen_ID = [OPTIONAL] The ID of the enchantment to be applied to the item.  The list of enchantment IDs can be found here: http://minecraft.gamepedia.com/Enchanting#Data_values.  Do not attempt to add enchantments to potions -_-
+# enchantment_lvl = [OPTIONAL] The level of the enchantment to be applied. If left null and an enchantment is applied, level will default to one.
 
 items:
     1:
@@ -30,6 +30,7 @@ items:
     - WOOD_SWORD;1;1;0
     - WOOD_AXE;1;1;0
     - WOOD_PICKAXE;1;1;0
+    - GOLD_PICKAXE;1;1;0
     - WOOD;10;20;0
     - STONE;8;16;0
     - COOKED_BEEF;2;8;0
@@ -42,6 +43,8 @@ items:
     - FLINT_AND_STEEL;1;1;0
     - COBBLESTONE;7;14;0
     - SANDSTONE;6;12;0
+    - SNOW;8;12;0
+    - COAL_BLOCK;6;12;0
     2:
     - GOLD_SWORD;1;1;0
     - CHAINMAIL_CHESTPLATE;1;1;0
@@ -64,6 +67,7 @@ items:
     - PUMPKIN_PIE;1;4;0
     - WATER_BUCKET;1;1;0
     - LAVA_BUCKET;1;1;0
+    - GOLD_PICKAXE;1;
     3:
     - STONE_SWORD;1;1;0
     - ENDER_PEARL;1;3;0
