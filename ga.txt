@@ -1,1 +1,2 @@
-UA-72176161-1
+track=UA-72167851-1
+name=play.paradise-mc.net
